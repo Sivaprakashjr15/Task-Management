@@ -40,5 +40,5 @@ This project is a simple task management application that allows users to create
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/task-manager.git
-   cd task-manager
+   git clone https://github.com/Sivaprakashjr15/Task-Management.git
+   cd Task-Management
