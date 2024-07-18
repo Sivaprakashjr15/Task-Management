@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Task Management Application</h1>
+    </header>
+
+    <section class="auth-section">
+      <form id="auth-form">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+      </form>
+      <button id="sign-up-btn">Sign Up</button>
+    </section>
+
+    <section class="task-section">
+      <form id="task-form">
+        <input type="text" id="title" placeholder="Title" required>
+        <textarea id="description" placeholder="Description"></textarea>
+        <select id="status">
+          <option value="To Do">To Do</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Done">Done</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+
+      <div class="filter">
+        <label for="filter-status">Filter by status:</label>
+        <select id="filter-status">
+          <option value="All">All</option>
+          <option value="To Do">To Do</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Done">Done</option>
+        </select>
+      </div>
+
+      <div id="task-list">
+        <!-- Task items will be inserted here dynamically -->
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
